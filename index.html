@@ -4,15 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Perfil de Usuario</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Importa la fuente Pacifico de Google Fonts -->
 <style>
-  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; }
+  @keyframes rgb {
+    0% {border-color: red;}
+    33% {border-color: green;}
+    66% {border-color: blue;}
+    100% {border-color: red;}
+  }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; }
   .perfil { background-color: #e0e0e0; /* color plomo claro */ width: 100%; padding: 25px; border-radius: 0px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); margin: 0 auto; text-align: center; box-sizing: border-box; }
-  .perfil h1 { font-family: 'Courier New', monospace; font-size: 2.5em; color: #800080; /* color morado */ margin-bottom: 20px; }
+  .perfil h1 { font-family: 'Pacifico', cursive; /* Usa la fuente Pacifico para el título */ font-size: 2.5em; color: #800080; /* color morado */ margin-bottom: 20px; }
   .perfil img { width: 100%; max-width: 200px; height: auto; margin-bottom: 20px; }
   .perfil .opciones { list-style: none; padding: 0; }
-  .perfil .opciones li { padding: 10px; background-color: #ffffff; margin-bottom: 15px; border-radius: 15px; transition: background-color 0.3s; }
-  .perfil .opciones li:hover { background-color: #f5f5f5; }
-  .perfil .opciones li a { text-decoration: none; color: #333; font-weight: bold; }
+  .perfil .opciones li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+  }
+  .perfil .opciones li:hover {
+    background-color: #f5f5f5;
+  }
+  .perfil .opciones li a {
+    text-decoration: none;
+    color: #800080;
+    font-weight: bold;
+    /*border: 2px solid #800080; /* Agrega un borde morado a los enlaces */
+    display: block; /* Hace que el enlace ocupe todo el espacio del elemento li */
+    padding: 1px; /* Agrega un padding al enlace para un mejor aspecto y facilidad de clic */
+    /*transition: border-color 0.3s; /* Agrega una transición al color del borde */
+  }
+  .perfil .opciones li:hover {
+    border-color: #ff4081; /* Cambia el color del borde al pasar el ratón */
+  }
+  
   .perfil .boton-social { display: inline-block; margin-right: 12px; }
   .perfil .boton-social img { width: 32px; height: 32px; }
   .perfil button { background-color: #5e35b1; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
@@ -32,7 +59,7 @@
   animation: rgb-border 3s linear infinite;
 }
 
-/* Asegúrate de incluir esta animación dentro de tu bloque de estilos CSS */
+
 
 </style>
 </head>
